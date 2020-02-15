@@ -30,6 +30,39 @@
                                 <p class="description" id="wp-whatsapp-me-phone-number-description">Insert a valid Whatsapp number that will receive the messages.</p>
                             </td>
                         </tr>
+                       </tr>
+                            <th scope="row">
+                                <label for="wp-whatsapp-me-title">
+                                    Title:
+                                </label>
+                            </th>
+                            <td>
+                                <input name="wp-whatsapp-me-title" type="text" id="wp-whatsapp-me-title" value="<?php echo get_option('wp-whatsapp-me-title'); ?>" class="regular-text" />
+                                <p class="description" id="wp-whatsapp-me-title-description">The title will appear on the top of the message form.</p>
+                            </td>
+                        </tr>
+                       </tr>
+                            <th scope="row">
+                                <label for="wp-whatsapp-me-text">
+                                    Text:
+                                </label>
+                            </th>
+                            <td>
+                                <textarea name="wp-whatsapp-me-text"  id="wp-whatsapp-me-text" class="large-text code" rows="3"><?= get_option('wp-whatsapp-me-text'); ?></textarea>
+                                <p class="description" id="wp-whatsapp-me-text-description">The text will appear on the top of the message form.</p>
+                            </td>
+                        </tr>
+                       </tr>
+                            <th scope="row">
+                                <label for="wp-whatsapp-me-title">
+                                    Button Title:
+                                </label>
+                            </th>
+                            <td>
+                                <input name="wp-whatsapp-me-button" type="text" id="wp-whatsapp-me-button" value="<?php echo get_option('wp-whatsapp-me-button'); ?>" class="regular-text" />
+                                <p class="description" id="wp-whatsapp-me-button-description">The Button Title will appear on the button of the message form.</p>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
                 <div class="form-messages">

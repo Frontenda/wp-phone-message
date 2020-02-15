@@ -1,7 +1,4 @@
 <?php
-
- /* admin area */
-
  class WpWhatsappMeAdmin {
 
     public function __construct(){
@@ -32,10 +29,16 @@
 
             $phone = sanitize_text_field( $_POST['wp-whatsapp-me-phone-number'] );
             $prefix = sanitize_text_field( $_POST['wp-whatsapp-me-phone-prefix'] );
+            $title = sanitize_text_field( $_POST['wp-whatsapp-me-title'] );
+            $text = sanitize_text_field( $_POST['wp-whatsapp-me-text'] );
+            $button = sanitize_text_field( $_POST['wp-whatsapp-me-button'] );
             $fullPhoneNumber = $prefix . (int) str_replace(' ', '', $phone);
             update_option( 'wp-whatsapp-me-phone-number', $phone );
             update_option( 'wp-whatsapp-me-phone-prefix', $prefix );
             update_option( 'wp-whatsapp-me-full-phone-number', $fullPhoneNumber );
+            update_option( 'wp-whatsapp-me-title', $title );
+            update_option( 'wp-whatsapp-me-text', $text );
+            update_option( 'wp-whatsapp-me-button', $button );
             update_option( 'wp-whatsapp-me-form-message', 'Settings saved.');
 
         }
@@ -43,6 +46,10 @@
             update_option( 'wp-whatsapp-me-form-message', 'Impossible saving data. Check fields info.');
         }
 
+        $this->adminRedirect();
+    }
+
+    public function adminRedirect() {
         // redirect at the end of the process
         if(isset( $_POST['_wp_http_referer'] )){
             // redirect the user to the appropriate page
@@ -50,11 +57,11 @@
                 wp_unslash( $_POST['_wp_http_referer'] ) // Input var okay.
             );
             // Finally, redirect back to the admin page.
-            wp_redirect( urldecode( $url ) );
+            wp_safe_redirect( urldecode( $url ) );
             exit;
         }
         else{
-            wp_redirect( urldecode( '/wp-admin' ) );
+            wp_safe_redirect( urldecode( '/wp-admin' ) );
             exit;
         }
     }
@@ -62,8 +69,8 @@
     public function adminStyle() {
         wp_enqueue_style('wp-whatsapp-me-intel-tel', PLUGINWMEURL . 'js/intl-tel-input/build/css/intlTelInput.css', array(), null, 'all' );
         wp_enqueue_script('wp-whatsapp-me-intel-tel', PLUGINWMEURL . 'js/intl-tel-input/build/js/intlTelInput.js' );
-        wp_enqueue_style('wp-whatsapp-me-admin', PLUGINWMEURL . 'css/style.css', array(), null, 'all' );
-        wp_enqueue_script('wp-whatsapp-me-admin', PLUGINWMEURL . 'js/script.js' );
+        wp_enqueue_style('wp-whatsapp-me-admin', PLUGINWMEURL . 'css/admin.css', array(), null, 'all' );
+        wp_enqueue_script('wp-whatsapp-me-admin', PLUGINWMEURL . 'js/admin.js' );
     }
 
     public function adminCallback() { // Section Callback

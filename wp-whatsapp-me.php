@@ -21,12 +21,13 @@ function wp_whatsapp_me_loader(){
     if( is_admin() ){
         $wpWhatsappMeAdmin = new WpWhatsappMeAdmin;
     }
+    $wpWhatsappMeShortcode = new WpWhatsappMeShortcode;
 }
 add_action('plugins_loaded', 'wp_whatsapp_me_loader');
 
- /* setting link on plugin description */
+    /* validation on send message */
 
- /* create short cut */
+    /* style the message form */
 
  /* create widjet */
 
