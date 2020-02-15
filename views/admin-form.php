@@ -10,7 +10,18 @@
                     <tbody>
                         <tr>
                             <th scope="row">
-                                <label for="whatsapp-phone-number">
+                                <label for="wp-whatsapp-me-phone-prefix">
+                                    International Prefix:
+                                </label>
+                            </th>
+                            <td>
+                                <input name="wp-whatsapp-me-phone-prefix" type="text" id="wp-whatsapp-me-phone-prefix" value="<?php echo get_option('wp-whatsapp-me-phone-prefix'); ?>" class="regular-text" />
+                                <p class="description" id="wp-whatsapp-me-phone-prefix-description">Insert the international prefix of your Whatsapp phone number.</p>
+                            </td>
+                        <tr>
+                        </tr>
+                            <th scope="row">
+                                <label for="wp-whatsapp-me-phone-number">
                                     Whatsapp phone number:
                                 </label>
                             </th>
@@ -21,9 +32,9 @@
                         </tr>
                     </tbody>
                 </table>
-
                 <div class="form-messages">
                     <?php echo get_option('wp-whatsapp-me-form-message'); ?>
+                    <input type="hidden" id="wp-whatsapp-me-full-phone-number" value="<?php echo get_option('wp-whatsapp-me-full-phone-number'); ?>" />
                 </div>
                 <?php
                     wp_nonce_field( 'wp-whatsapp-me-settings-save', 'wp-whatsapp-me-form-message' );

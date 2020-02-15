@@ -25,8 +25,6 @@ function wp_whatsapp_me_loader(){
 }
 add_action('plugins_loaded', 'wp_whatsapp_me_loader');
 
- /* dropdown with international phone prefix */
-
  /* create short cut */
 
  /* create widjet */
