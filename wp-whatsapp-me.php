@@ -10,8 +10,7 @@
  * Author URI:        http://webmarcello.co.uk
  */
 
-
-//defined('ASBPATH') or die('You are not allowed here');
+define('PLUGINWMEBASENAME', plugin_basename(__FILE__) );
 
 foreach ( glob( plugin_dir_path( __FILE__ ) .'classes/*.php') as $filename)
 {
@@ -24,6 +23,8 @@ function wp_whatsapp_me_loader(){
     }
 }
 add_action('plugins_loaded', 'wp_whatsapp_me_loader');
+
+ /* setting link on plugin description */
 
  /* create short cut */
 
