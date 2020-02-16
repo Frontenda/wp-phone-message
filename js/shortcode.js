@@ -32,7 +32,7 @@ jQuery(document).ready(function ($) {
     function whatsappValidation(fullTelephone, message, errorTarget) {
         if (message) {
             if (fullTelephone) {
-                whatsappErrorMessage("");
+                whatsappErrorMessage("", errorTarget);
                 return true;
             }
             else {
