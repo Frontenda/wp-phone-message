@@ -25,7 +25,7 @@
     
     public function adminSave(){
         // save data
-        if( isset( $_POST['wp-whatsapp-me-phone-number'] ) && isset( $_POST['wp-whatsapp-me-phone-prefix'] ) ) {
+        if( ( $_POST['wp-whatsapp-me-phone-number'] ) && ( $_POST['wp-whatsapp-me-phone-prefix'] ) ) {
 
             $phone = sanitize_text_field( $_POST['wp-whatsapp-me-phone-number'] );
             $prefix = sanitize_text_field( $_POST['wp-whatsapp-me-phone-prefix'] );
@@ -43,7 +43,7 @@
 
         }
         else{
-            update_option( 'wp-whatsapp-me-form-message', 'Impossible saving data. Check fields info.');
+            update_option( 'wp-whatsapp-me-form-message', 'International prefix and Whatsapp phone number are required.');
         }
 
         $this->adminRedirect();

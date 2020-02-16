@@ -4,7 +4,7 @@
  * Plugin URI:        https://example.com/plugins/the-basics/
  * Description:       Send a whatsapp message from your Wordpress website
  * Version:           1.0.0
- * Requires at least: 3.3
+ * Requires at least: 4.5.13
  * Requires PHP:      5.6
  * Author:            Marcello Perri
  * Author URI:        http://webmarcello.co.uk
@@ -24,8 +24,6 @@ function wp_whatsapp_me_loader(){
     $wpWhatsappMeShortcode = new WpWhatsappMeShortcode;
 }
 add_action('plugins_loaded', 'wp_whatsapp_me_loader');
-
-    /* validation on send message */
 
  /* create widjet */
 

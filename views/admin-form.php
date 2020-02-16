@@ -6,12 +6,19 @@
             <h1 class="admin-page-title"><?= esc_html( get_admin_page_title() ); ?></h1>
         
             <form method="post" action="<?= esc_html( admin_url( 'admin-post.php' ) ); ?>">
+
+                <div class="form-description">
+                    Using WP Whatsapp Me is very simple and it doens't require any API Key or registration.<br/>
+                    Please complete the form below. International Prefix and Whatsapp phone number are required.<br/>
+                    In order to display the Whatsapp message form on your page please add the shortcode <strong>[wp-whatsapp-me]</strong> to your page/post content.<br/> 
+                </div>
+
                 <table class="form-table">
                     <tbody>
                         <tr>
                             <th scope="row">
                                 <label for="wp-whatsapp-me-phone-prefix">
-                                    International Prefix:
+                                    International Prefix* :
                                 </label>
                             </th>
                             <td>
@@ -22,7 +29,7 @@
                         </tr>
                             <th scope="row">
                                 <label for="wp-whatsapp-me-phone-number">
-                                    Whatsapp phone number:
+                                    Whatsapp phone number* :
                                 </label>
                             </th>
                             <td>
@@ -33,7 +40,7 @@
                        </tr>
                             <th scope="row">
                                 <label for="wp-whatsapp-me-title">
-                                    Title:
+                                    Title :
                                 </label>
                             </th>
                             <td>
@@ -44,7 +51,7 @@
                        </tr>
                             <th scope="row">
                                 <label for="wp-whatsapp-me-text">
-                                    Text:
+                                    Text :
                                 </label>
                             </th>
                             <td>
@@ -55,7 +62,7 @@
                        </tr>
                             <th scope="row">
                                 <label for="wp-whatsapp-me-title">
-                                    Button Title:
+                                    Button Title :
                                 </label>
                             </th>
                             <td>
@@ -65,10 +72,12 @@
                         </tr>
                     </tbody>
                 </table>
+
                 <div class="form-messages">
                     <?php echo get_option('wp-whatsapp-me-form-message'); ?>
                     <input type="hidden" id="wp-whatsapp-me-full-phone-number" value="<?php echo get_option('wp-whatsapp-me-full-phone-number'); ?>" />
                 </div>
+
                 <?php
                     wp_nonce_field( 'wp-whatsapp-me-settings-save', 'wp-whatsapp-me-form-message' );
                     submit_button();
