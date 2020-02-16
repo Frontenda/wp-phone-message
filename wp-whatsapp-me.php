@@ -27,8 +27,6 @@ add_action('plugins_loaded', 'wp_whatsapp_me_loader');
 
     /* validation on send message */
 
-    /* style the message form */
-
  /* create widjet */
 
  /* setting plugin in wordpress website */
