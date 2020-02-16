@@ -29,11 +29,11 @@
         if( ( $_POST['wp-whatsapp-me-phone-number'] ) && ( $_POST['wp-whatsapp-me-phone-prefix'] ) ) {
 
             $phone = sanitize_text_field( $_POST['wp-whatsapp-me-phone-number'] );
-            $prefix = sanitize_text_field( $_POST['wp-whatsapp-me-phone-prefix'] );
+            $prefix = (int) str_replace(' ', '', sanitize_text_field( $_POST['wp-whatsapp-me-phone-prefix'] ));
             $title = sanitize_text_field( $_POST['wp-whatsapp-me-title'] );
             $text = sanitize_text_field( $_POST['wp-whatsapp-me-text'] );
             $button = sanitize_text_field( $_POST['wp-whatsapp-me-button'] );
-            $fullPhoneNumber = $prefix . (int) str_replace(' ', '', $phone);
+            $fullPhoneNumber = (int) str_replace(' ', '', $prefix) . (int) str_replace(' ', '', $phone);
             update_option( 'wp-whatsapp-me-phone-number', $phone );
             update_option( 'wp-whatsapp-me-phone-prefix', $prefix );
             update_option( 'wp-whatsapp-me-full-phone-number', $fullPhoneNumber );
