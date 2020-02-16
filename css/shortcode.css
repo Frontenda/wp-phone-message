@@ -1,9 +1,14 @@
+.whatsapp-wrapper {
+    background: #f4f7f8;
+    border: 1px solid #efefef;
+    border-radius: 8px;
+    width: 100%;
+    margin: 0 0 40px;
+}
 .whatsapp-form {
     max-width: 500px;
-    margin: 10px auto 40px;
-    padding: 20px;
-    background: #f4f7f8;
-    border-radius: 8px;
+    margin: 10px auto;
+    padding: 20px 10px;
     text-align: center;
 }
 .whatsapp-form .whatsapp-text {
