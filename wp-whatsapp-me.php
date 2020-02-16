@@ -25,6 +25,10 @@ function wp_whatsapp_me_loader(){
 }
 add_action('plugins_loaded', 'wp_whatsapp_me_loader');
 
- /* create widjet */
+// Register and load the widget
+function wp_whatsapp_me_load_widget() {
+    register_widget( 'WpWhatsappMeWidget' );
+}
+add_action( 'widgets_init', 'wp_whatsapp_me_load_widget' );
 
  /* setting plugin in wordpress website */

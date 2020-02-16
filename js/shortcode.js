@@ -7,8 +7,19 @@ jQuery(document).ready(function ($) {
 
         var whatsappUrl = "https://wa.me/" + fullTelephone + "?text=" + message;
 
-        if (whatsappValidation(fullTelephone, message)) {
+        if (whatsappValidation(fullTelephone, message, 'whatsapp-error')) {
             popupwindow(whatsappUrl, title, 1000, 700);
+        }
+    });
+
+    $("#wp-whatsapp-me-widget-button").click(function () {
+        var fullTelephone = $('#wp-whatsapp-me-widget-full-phone-number').val();
+        var message = $('#wp-whatsapp-me-widget-message').val();
+
+        var whatsappUrl = "https://wa.me/" + fullTelephone + "?text=" + message;
+
+        if (whatsappValidation(fullTelephone, message, 'whatsapp-widget-error')) {
+            popupwindow(whatsappUrl, 'Whatsapp Me', 1000, 700);
         }
     });
 
@@ -18,25 +29,25 @@ jQuery(document).ready(function ($) {
         return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
     }
 
-    function whatsappValidation(fullTelephone, message) {
+    function whatsappValidation(fullTelephone, message, errorTarget) {
         if (message) {
             if (fullTelephone) {
                 whatsappErrorMessage("");
                 return true;
             }
             else {
-                whatsappErrorMessage("Telephone number is not set.");
+                whatsappErrorMessage("Telephone number is not set.", errorTarget);
                 return false;
             }
         }
         else {
-            whatsappErrorMessage("Please insert a message.");
+            whatsappErrorMessage("Please insert a message.", errorTarget);
             return false;
         }
     }
 
-    function whatsappErrorMessage(errorMessage) {
-        $("#whatsapp-error").text(errorMessage);
+    function whatsappErrorMessage(errorMessage, errorTarget) {
+        $("#" + errorTarget).text(errorMessage);
     }
 
 });
