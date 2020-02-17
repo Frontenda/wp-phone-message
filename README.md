@@ -48,7 +48,7 @@ Here is your WP Whatsapp Me widget form:
 ![WP Whatsapp Me widget form](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-widget.jpg)
 
 
-Here is your WP Whatsapp Me form:
+Here is your WP Whatsapp Me widget:
 
 ![WP Whatsapp Me form](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-widget-form.jpg)
 
