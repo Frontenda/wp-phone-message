@@ -1,7 +1,7 @@
 <?php
-if ( !class_exists( 'WpWhatsappMeShortcode' ) ) {
+if ( !class_exists( 'WpWhatappMeShortcode' ) ) {
 
-    class WpWhatsappMeShortcode {
+    class WpWhatappMeShortcode {
 
         public function __construct(){
             add_action( 'init', array( $this, 'registerShortcode' ));
@@ -9,7 +9,7 @@ if ( !class_exists( 'WpWhatsappMeShortcode' ) ) {
         }
 
         public function registerShortcode(){
-            add_shortcode('wp-whatsapp-me', array( $this, 'renderShortcode' ));
+            add_shortcode('wp-whatapp-me', array( $this, 'renderShortcode' ));
         }
 
         public function renderShortcode($atts){
@@ -17,8 +17,8 @@ if ( !class_exists( 'WpWhatsappMeShortcode' ) ) {
         }
 
         public function shortcodeStyle(){
-            wp_enqueue_style('wp-whatsapp-me-shortcode', PLUGINWMEURL . 'css/shortcode.css', array(), null, 'all' );
-            wp_enqueue_script('wp-whatsapp-me-shortcode', PLUGINWMEURL . 'js/shortcode.js' );
+            wp_enqueue_style('wp-whatapp-me-shortcode', PLUGINWMEURL . 'css/shortcode.css', array(), null, 'all' );
+            wp_enqueue_script('wp-whatapp-me-shortcode', PLUGINWMEURL . 'js/shortcode.js' );
         }
     }
 }

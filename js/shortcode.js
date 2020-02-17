@@ -1,25 +1,25 @@
 jQuery(document).ready(function ($) {
 
-    $("#wp-whatsapp-me-button").click(function () {
-        var fullTelephone = $('#wp-whatsapp-me-full-phone-number').val();
-        var message = $('#wp-whatsapp-me-message').val();
-        var title = $('#wp-whatsapp-me-title').val();
+    $("#wp-whatapp-me-button").click(function () {
+        var fullTelephone = $('#wp-whatapp-me-full-phone-number').val();
+        var message = $('#wp-whatapp-me-message').val();
+        var title = $('#wp-whatapp-me-title').val();
 
-        var whatsappUrl = "https://wa.me/" + fullTelephone + "?text=" + message;
+        var whatappUrl = "https://wa.me/" + fullTelephone + "?text=" + message;
 
-        if (whatsappValidation(fullTelephone, message, 'whatsapp-error')) {
-            popupwindow(whatsappUrl, title, 1000, 700);
+        if (whatappValidation(fullTelephone, message, 'whatapp-error')) {
+            popupwindow(whatappUrl, title, 1000, 700);
         }
     });
 
-    $("#wp-whatsapp-me-widget-button").click(function () {
-        var fullTelephone = $('#wp-whatsapp-me-widget-full-phone-number').val();
-        var message = $('#wp-whatsapp-me-widget-message').val();
+    $("#wp-whatapp-me-widget-button").click(function () {
+        var fullTelephone = $('#wp-whatapp-me-widget-full-phone-number').val();
+        var message = $('#wp-whatapp-me-widget-message').val();
 
-        var whatsappUrl = "https://wa.me/" + fullTelephone + "?text=" + message;
+        var whatappUrl = "https://wa.me/" + fullTelephone + "?text=" + message;
 
-        if (whatsappValidation(fullTelephone, message, 'whatsapp-widget-error')) {
-            popupwindow(whatsappUrl, 'Whatsapp Me', 1000, 700);
+        if (whatappValidation(fullTelephone, message, 'whatapp-widget-error')) {
+            popupwindow(whatappUrl, 'Whatsapp Me', 1000, 700);
         }
     });
 
@@ -29,24 +29,24 @@ jQuery(document).ready(function ($) {
         return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
     }
 
-    function whatsappValidation(fullTelephone, message, errorTarget) {
+    function whatappValidation(fullTelephone, message, errorTarget) {
         if (message) {
             if (fullTelephone) {
-                whatsappErrorMessage(" ", errorTarget);
+                whatappErrorMessage(" ", errorTarget);
                 return true;
             }
             else {
-                whatsappErrorMessage("Telephone number is not set.", errorTarget);
+                whatappErrorMessage("Telephone number is not set.", errorTarget);
                 return false;
             }
         }
         else {
-            whatsappErrorMessage("Please insert a message.", errorTarget);
+            whatappErrorMessage("Please insert a message.", errorTarget);
             return false;
         }
     }
 
-    function whatsappErrorMessage(errorMessage, errorTarget) {
+    function whatappErrorMessage(errorMessage, errorTarget) {
         $("#" + errorTarget).text(errorMessage);
     }
 

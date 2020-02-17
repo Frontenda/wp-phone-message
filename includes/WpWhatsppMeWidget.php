@@ -1,20 +1,20 @@
 <?php
 
-if ( !class_exists( 'WpWhatsappMeWidget' ) ) {
+if ( !class_exists( 'WpWhatappMeWidget' ) ) {
 
-    class WpWhatsappMeWidget extends WP_Widget {
+    class WpWhatappMeWidget extends WP_Widget {
     
         function __construct() {
             parent::__construct(
             
             // Base ID of your widget
-            'WpWhatsappMeWidget', 
+            'WpWhatappMeWidget', 
             
             // Widget name will appear in UI
-            __('WP WhatsApp Me Widget', 'wp_whatsapp_me_domain'), 
+            __('WP Whasapp Me Widget', 'wp_whatapp_me_domain'), 
             
             // Widget description
-            array( 'description' => __( 'Display Whatsapp message form on widget', 'wp_whatsapp_me_domain' ), ) 
+            array( 'description' => __( 'Display Whatsapp message form on widget', 'wp_whatapp_me_domain' ), ) 
             );
         }
         
@@ -41,7 +41,7 @@ if ( !class_exists( 'WpWhatsappMeWidget' ) ) {
                 $title = $instance[ 'title' ];
             }
             else {
-                $title = __( 'New title', 'wp_whatsapp_me_domain' );
+                $title = __( 'New title', 'wp_whatapp_me_domain' );
             }
             if ( isset( $instance[ 'text' ] ) ) {
                 $text = $instance[ 'text' ];
