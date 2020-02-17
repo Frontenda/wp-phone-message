@@ -25,14 +25,14 @@ On your wordpress dashboard, go to Plugins => Installed Plugins, search for WP W
 ### Settings
 
 The WP Whatsapp Me setting are on the wordpress dashboard on Settings => WP Whatsapp Me
-WP Whatsapp Me automatically with change your whatsapp phone number and your international prefix in order to make it soutable with the Whatsapp API.
+WP Whatsapp Me automatically with change your whatsapp phone number and your international prefix in order to make it suitable with the Whatsapp API.
 
 Here is your WP Whatsapp Me setting:
 
 ![WP Whatsapp Me setting](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-settings.jpg)
 
 ##  Shortcode
-Using WP Whatsapp Me is very simple and it doens't require any API Key or registration.
+Using WP Whatsapp Me is very simple and it doesn't require any API Key or registration.
 Please complete the form below. International Prefix and Whatsapp phone number are required.
 In order to display the Whatsapp message form on your page please add the shortcode [wp-whatsapp-me] to your page/post content.
 
