@@ -10,9 +10,10 @@
  * Author URI:        http://webmarcello.co.uk
  */
 
+
 define('PLUGINWMEBASENAME', plugin_basename(__FILE__) );
 
-foreach ( glob( plugin_dir_path( __FILE__ ) .'classes/*.php') as $filename)
+foreach ( glob( plugin_dir_path( __FILE__ ) .'includes/*.php') as $filename)
 {
     include_once $filename;
 }
@@ -34,4 +35,7 @@ if ( !function_exists( 'wp_whatsapp_me_load_widget' ) ) {
     }
     add_action( 'widgets_init', 'wp_whatsapp_me_load_widget' );
 }
- /* setting plugin in wordpress website */
+
+/* uninstall section */
+
+/* setting plugin in wordpress website */

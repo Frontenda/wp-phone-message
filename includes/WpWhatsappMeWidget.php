@@ -11,10 +11,10 @@ if ( !class_exists( 'WpWhatsappMeWidget' ) ) {
             'WpWhatsappMeWidget', 
             
             // Widget name will appear in UI
-            __('WP WhatsApp Me Widget', 'wp_whatsapp_me_widget_domain'), 
+            __('WP WhatsApp Me Widget', 'wp_whatsapp_me_domain'), 
             
             // Widget description
-            array( 'description' => __( 'Display Whatsapp message form on widget', 'wp_whatsapp_me_widget_domain' ), ) 
+            array( 'description' => __( 'Display Whatsapp message form on widget', 'wp_whatsapp_me_domain' ), ) 
             );
         }
         
@@ -41,7 +41,7 @@ if ( !class_exists( 'WpWhatsappMeWidget' ) ) {
                 $title = $instance[ 'title' ];
             }
             else {
-                $title = __( 'New title', 'wp_whatsapp_me_widget_domain' );
+                $title = __( 'New title', 'wp_whatsapp_me_domain' );
             }
             if ( isset( $instance[ 'text' ] ) ) {
                 $text = $instance[ 'text' ];
