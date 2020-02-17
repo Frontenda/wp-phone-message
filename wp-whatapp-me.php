@@ -1,6 +1,6 @@
 <?php
 /**
- * Plugin Name:       WP Whasapp Me
+ * Plugin Name:       WP Whatapp Me
  * Plugin URI:        https://github.com/webmarcello8080/wp-whatapp-me
  * Description:       Send a whatsapp message from your Wordpress website. You can render a message form through shotcode or widget.
  * Version:           1.0.0
