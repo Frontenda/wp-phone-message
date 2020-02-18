@@ -17,7 +17,7 @@ WP Whasapp Me is a Wordpress plugin that gives the possibility to render a simpl
 * Enter form text
 The widget will send the whatsapp to the phone number set on the setting section.
 
-## Installation
+## Installation.
 
 Download the plugin in your computer, explode the ZIP file on your plugin folder in your wordpress website. 
 On your wordpress dashboard, go to Plugins => Installed Plugins, search for WP Whasapp Me and activate the Plugin.
