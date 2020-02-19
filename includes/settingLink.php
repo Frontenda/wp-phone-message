@@ -1,11 +1,11 @@
 <?php
 
-if ( !function_exists( 'wp_whatapp_me_loader' ) ) {
-	function wp_whatapp_me_settings_link( $links ) {
+if ( !function_exists( 'wp_phone_message_loader' ) ) {
+	function wp_phone_message_settings_link( $links ) {
 		$links[] = '<a href="' .
-			admin_url( 'options-general.php?page=wp-whatapp-me-admin' ) .
-			'">' . __('Settings', 'wp_whatapp_me_domain') . '</a>';
+			admin_url( 'options-general.php?page=wp-phone-message-admin' ) .
+			'">' . __('Settings', 'wp_phone_message_domain') . '</a>';
 		return $links;
 	}
-	add_filter('plugin_action_links_' . PLUGINWMEBASENAME, 'wp_whatapp_me_settings_link');
+	add_filter('plugin_action_links_' . PLUGINWMEBASENAME, 'wp_phone_message_settings_link');
 }

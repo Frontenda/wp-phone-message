@@ -1,9 +1,9 @@
-# wp-whatapp-me
+# wp-phone-message
 Wordpress Plugin made to send a Whatapp message from your Wordpress website
 
 ## Description
 
-WP Whasapp Me is a Wordpress plugin that gives the possibility to render a simple message form that will open a Whatsapp chat on a new window. You will have the possibility to display the message form through shotcode in order to display the form inside a page or a post, or the possibility to display the message for through a widget.
+WP Phone Message is a Wordpress plugin that gives the possibility to render a simple message form that will open a Whatsapp chat on a new window. You will have the possibility to display the message form through shotcode in order to display the form inside a page or a post, or the possibility to display the message for through a widget.
 
 ### Settings include:
 * Enter your international prefix (required)
@@ -20,37 +20,37 @@ The widget will send the whatsapp to the phone number set on the setting section
 ## Installation.
 
 Download the plugin in your computer, explode the ZIP file on your plugin folder in your wordpress website. 
-On your wordpress dashboard, go to Plugins => Installed Plugins, search for WP Whasapp Me and activate the Plugin.
+On your wordpress dashboard, go to Plugins => Installed Plugins, search for WP Phone Message and activate the Plugin.
 
 ### Settings
 
-The WP Whasapp Me setting are on the wordpress dashboard on Settings => WP Whasapp Me
-WP Whasapp Me automatically with change your whatsapp phone number and your international prefix in order to make it suitable with the Whatsapp API.
+The WP Phone Message setting are on the wordpress dashboard on Settings => WP Phone Message
+WP Phone Message automatically with change your whatsapp phone number and your international prefix in order to make it suitable with the Whatsapp API.
 
-Here is your WP Whasapp Me setting:
+Here is your WP Phone Message setting:
 
-![WP Whasapp Me setting](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-settings.jpg)
+![WP Phone Message setting](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-settings.jpg)
 
 ##  Shortcode
-Using WP Whasapp Me is very simple and it doesn't require any API Key or registration.
+Using WP Phone Message is very simple and it doesn't require any API Key or registration.
 Please complete the form below. International Prefix and Whatsapp phone number are required.
-In order to display the Whatsapp message form on your page please add the shortcode [wp-whatapp-me] to your page/post content.
+In order to display the Whatsapp message form on your page please add the shortcode [wp-phone-message] to your page/post content.
 
-Here is your WP Whasapp Me form:
+Here is your WP Phone Message form:
 
-![WP Whasapp Me form](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-message-form.jpg)
+![WP Phone Message form](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-message-form.jpg)
 
 ## Widget
-You can also display the WP Whasapp Me form through a widget:
+You can also display the WP Phone Message form through a widget:
 
-Here is your WP Whasapp Me widget form:
+Here is your WP Phone Message widget form:
 
-![WP Whasapp Me widget form](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-widget.jpg)
+![WP Phone Message widget form](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-widget.jpg)
 
 
-Here is your WP Whasapp Me widget:
+Here is your WP Phone Message widget:
 
-![WP Whasapp Me form](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-widget-form.jpg)
+![WP Phone Message form](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-widget-form.jpg)
 
 ## NOTE From Whatsapp API
 How to add international contacts' phone numbers

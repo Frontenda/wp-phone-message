@@ -1,9 +1,9 @@
 jQuery(document).ready(function ($) {
 
-    $("#wp-whatapp-me-button").click(function () {
-        var fullTelephone = $('#wp-whatapp-me-full-phone-number').val();
-        var message = $('#wp-whatapp-me-message').val();
-        var title = $('#wp-whatapp-me-title').val();
+    $("#wp-phone-message-button").click(function () {
+        var fullTelephone = $('#wp-phone-message-full-phone-number').val();
+        var message = $('#wp-phone-message-message').val();
+        var title = $('#wp-phone-message-title').val();
 
         var whatappUrl = "https://wa.me/" + fullTelephone + "?text=" + message;
 
@@ -12,9 +12,9 @@ jQuery(document).ready(function ($) {
         }
     });
 
-    $("#wp-whatapp-me-widget-button").click(function () {
-        var fullTelephone = $('#wp-whatapp-me-widget-full-phone-number').val();
-        var message = $('#wp-whatapp-me-widget-message').val();
+    $("#wp-phone-message-widget-button").click(function () {
+        var fullTelephone = $('#wp-phone-message-widget-full-phone-number').val();
+        var message = $('#wp-phone-message-widget-message').val();
 
         var whatappUrl = "https://wa.me/" + fullTelephone + "?text=" + message;
 

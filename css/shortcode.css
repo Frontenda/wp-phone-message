@@ -15,7 +15,7 @@
     margin: 10px 0;
     font-size: 15px;
 }
-.whatapp-form .wp-whatapp-me-message {
+.whatapp-form .wp-phone-message-message {
     background: rgba(255,255,255,.1);
     border: none;
     border-radius: 4px;
@@ -34,14 +34,14 @@
     -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
     box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
 }
-.whatapp-form .wp-whatapp-me-message:focus{
+.whatapp-form .wp-phone-message-message:focus{
 	background: #d2d9dd;
 }
 .whatapp-form .whatapp-error {
     color: red;
     font-size: 14px;
 }
-.whatapp-form .wp-whatapp-me-button {
+.whatapp-form .wp-phone-message-button {
     position: relative;
     display: block;
     padding: 12px 39px 12px 39px;
@@ -55,7 +55,7 @@
     border: 1px solid #16a085;
     border-width: 1px 1px 3px;
 }
-.whatapp-form .wp-whatapp-me-button:hover
+.whatapp-form .wp-phone-message-button:hover
 {
 	background: #109177;
 }

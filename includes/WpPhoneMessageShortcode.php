@@ -1,7 +1,7 @@
 <?php
-if ( !class_exists( 'WpWhatappMeShortcode' ) ) {
+if ( !class_exists( 'WpPhoneMessageShortcode' ) ) {
 
-    class WpWhatappMeShortcode {
+    class WpPhoneMessageShortcode {
 
         public function __construct(){
             add_action( 'init', array( $this, 'registerShortcode' ));
@@ -9,7 +9,7 @@ if ( !class_exists( 'WpWhatappMeShortcode' ) ) {
         }
 
         public function registerShortcode(){
-            add_shortcode('wp-whatapp-me', array( $this, 'renderShortcode' ));
+            add_shortcode('wp-phone-message', array( $this, 'renderShortcode' ));
         }
 
         public function renderShortcode($atts){
@@ -17,8 +17,8 @@ if ( !class_exists( 'WpWhatappMeShortcode' ) ) {
         }
 
         public function shortcodeStyle(){
-            wp_enqueue_style('wp-whatapp-me-shortcode', PLUGINWMEURL . 'css/shortcode.css', array(), null, 'all' );
-            wp_enqueue_script('wp-whatapp-me-shortcode', PLUGINWMEURL . 'js/shortcode.js' );
+            wp_enqueue_style('wp-phone-message-shortcode', PLUGINWMEURL . 'css/shortcode.css', array(), null, 'all' );
+            wp_enqueue_script('wp-phone-message-shortcode', PLUGINWMEURL . 'js/shortcode.js' );
         }
     }
 }
