@@ -1,5 +1,5 @@
 # wp-phone-message
-Wordpress Plugin made to send a Whatapp message from your Wordpress website
+Wordpress Plugin made to send a Whatsapp message from your Wordpress website
 
 ## Description
 
