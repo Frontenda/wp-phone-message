@@ -29,7 +29,7 @@ WP Phone Message automatically with change your whatsapp phone number and your i
 
 Here is your WP Phone Message setting:
 
-![WP Phone Message setting](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-settings.jpg)
+![WP Phone Message settings](http://webmarcello.co.uk/wp-content/uploads/2020/02/plugin-settings.jpg)
 
 ##  Shortcode
 Using WP Phone Message is very simple and it doesn't require any API Key or registration.
