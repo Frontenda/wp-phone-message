@@ -22,7 +22,7 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
 
         public function WhatappMeAdminPage() {
             //show the form
-            include_once( PLUGINWMEPATH . 'views/admin-form.php' );
+            include_once( PLUGIN_WPM_PATH . 'views/admin-form.php' );
         }
         
         public function adminSave(){
@@ -69,10 +69,10 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
         }
 
         public function adminStyle() {
-            wp_enqueue_style('wp-phone-message-intel-tel', PLUGINWMEURL . 'js/intl-tel-input/build/css/intlTelInput.css', array(), null, 'all' );
-            wp_enqueue_script('wp-phone-message-intel-tel', PLUGINWMEURL . 'js/intl-tel-input/build/js/intlTelInput.js' );
-            wp_enqueue_style('wp-phone-message-admin', PLUGINWMEURL . 'css/admin.css', array(), null, 'all' );
-            wp_enqueue_script('wp-phone-message-admin', PLUGINWMEURL . 'js/admin.js' );
+            wp_enqueue_style('wp-phone-message-intel-tel', PLUGIN_WPM_URL . 'js/intl-tel-input/build/css/intlTelInput.css', array(), null, 'all' );
+            wp_enqueue_script('wp-phone-message-intel-tel', PLUGIN_WPM_URL . 'js/intl-tel-input/build/js/intlTelInput.js' );
+            wp_enqueue_style('wp-phone-message-admin', PLUGIN_WPM_URL . 'css/admin.css', array(), null, 'all' );
+            wp_enqueue_script('wp-phone-message-admin', PLUGIN_WPM_URL . 'js/admin.js' );
         }
 
         public function adminCallback() { // Section Callback

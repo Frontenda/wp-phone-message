@@ -30,7 +30,7 @@ if ( !class_exists( 'WpPhoneMessageWidget' ) ) {
                 echo $args['before_title'] . $title . $args['after_title'];
             }
 
-            include_once( PLUGINWMEPATH . 'views/widget-form.php' );
+            include_once( PLUGIN_WPM_PATH . 'views/widget-form.php' );
 
             echo $args['after_widget'];
         }
@@ -51,7 +51,7 @@ if ( !class_exists( 'WpPhoneMessageWidget' ) ) {
             }
 
             // Widget admin form
-            include( PLUGINWMEPATH . 'views/widget-admin-form.php' );
+            include( PLUGIN_WPM_PATH . 'views/widget-admin-form.php' );
         }
             
         // Updating widget replacing old instances with new

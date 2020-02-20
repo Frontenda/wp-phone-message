@@ -7,5 +7,5 @@ if ( !function_exists( 'wp_phone_message_loader' ) ) {
 			'">' . __('Settings', 'wp_phone_message_domain') . '</a>';
 		return $links;
 	}
-	add_filter('plugin_action_links_' . PLUGINWMEBASENAME, 'wp_phone_message_settings_link');
+	add_filter('plugin_action_links_' . PLUGIN_WPM_BASENAME, 'wp_phone_message_settings_link');
 }

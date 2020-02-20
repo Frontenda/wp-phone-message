@@ -13,12 +13,12 @@ if ( !class_exists( 'WpPhoneMessageShortcode' ) ) {
         }
 
         public function renderShortcode($atts){
-            include_once( PLUGINWMEPATH . 'views/shortcode-form.php' );
+            include_once( PLUGIN_WPM_PATH . 'views/shortcode-form.php' );
         }
 
         public function shortcodeStyle(){
-            wp_enqueue_style('wp-phone-message-shortcode', PLUGINWMEURL . 'css/shortcode.css', array(), null, 'all' );
-            wp_enqueue_script('wp-phone-message-shortcode', PLUGINWMEURL . 'js/shortcode.js' );
+            wp_enqueue_style('wp-phone-message-shortcode', PLUGIN_WPM_URL . 'css/shortcode.css', array(), null, 'all' );
+            wp_enqueue_script('wp-phone-message-shortcode', PLUGIN_WPM_URL . 'js/shortcode.js' );
         }
     }
 }

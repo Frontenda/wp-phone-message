@@ -11,7 +11,7 @@
  */
 
 
-define('PLUGINWMEBASENAME', plugin_basename(__FILE__) );
+define('PLUGIN_WPM_BASENAME', plugin_basename(__FILE__) );
 
 foreach ( glob( plugin_dir_path( __FILE__ ) .'includes/*.php') as $filename)
 {
@@ -35,7 +35,3 @@ if ( !function_exists( 'wp_phone_message_load_widget' ) ) {
     }
     add_action( 'widgets_init', 'wp_phone_message_load_widget' );
 }
-
-/* uninstall section */
-
-/* setting plugin in wordpress website */
