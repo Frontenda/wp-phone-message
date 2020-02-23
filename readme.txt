@@ -2,7 +2,7 @@
 Contributors: webmarcello
 Tags: message, form, whatsapp, shortcode, widget
 Requires at least: 4.5.13
-Tested up to: 4.9
+Tested up to: 5.3.2
 Stable tag: trunk
 Requires PHP: 5.6
 License: GPLv2 or later
@@ -66,8 +66,20 @@ e.g.
 
 1. Upload the plugin files to the `/wp-content/plugins/wp-phone-message` directory, or install the plugin through the WordPress plugins screen directly.
 1. Activate the plugin through the 'Plugins' screen in WordPress
-1. Use the Settings->Plugin Name screen to configure the plugin
-1. (Make your instructions match the desired user flow for activating and installing your plugin. Include any steps that might be needed for explanatory purposes)
+1. Use the Settings -> WP Phone Message screen to configure the plugin
+1. Insert your International Prefix and your whatsapp phone number and click on "Save Changes"
+
+
+== Changelog ==
+
+= 1.0.0 =
+* Creating settings from
+* Form validation
+* Creating shortcode
+* Creating widget 
+
+= 1.0.1 =
+* Fixing compatibility issue with Wordpress 5.3.x 
 
 == Frequently Asked Questions ==
 
@@ -83,4 +95,3 @@ e.g.
 
 
 == Upgrade Notice ==
-

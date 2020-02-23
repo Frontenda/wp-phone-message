@@ -15,6 +15,10 @@
     margin: 10px 0;
     font-size: 15px;
 }
+.whatapp-form .whatapp-title {
+    font-size: 25px;
+    margin: 10px !important;
+}
 .whatapp-form .wp-phone-message-message {
     background: rgba(255,255,255,.1);
     border: none;
