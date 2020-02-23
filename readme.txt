@@ -72,14 +72,14 @@ e.g.
 
 == Changelog ==
 
+= 1.0.1 =
+* Fixing compatibility issue with Wordpress 5.3.x 
+
 = 1.0.0 =
 * Creating settings from
 * Form validation
 * Creating shortcode
 * Creating widget 
-
-= 1.0.1 =
-* Fixing compatibility issue with Wordpress 5.3.x 
 
 == Frequently Asked Questions ==
 
