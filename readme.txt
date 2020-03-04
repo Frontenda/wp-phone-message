@@ -72,6 +72,9 @@ e.g.
 
 == Changelog ==
 
+= 1.0.2 =
+* Minifing CSS and JS files
+
 = 1.0.1 =
 * Fixing compatibility issue with Wordpress 5.3.x 
 
