@@ -11,10 +11,23 @@ WP Phone Message is a Wordpress plugin that gives the possibility to render a si
 * Enter the form title
 * Enter form text
 * Enter form bottom text
+* Possibility to add name field
+* Possibility to add address field
+* Possibility to add phone number field
+* Possibility to add email address field
+* Making fields mandatory
+* Possibility to set fields placeholder
 
 ### Widget Settings:
 * Enter the form title
 * Enter form text
+* Possibility to add name field
+* Possibility to add address field
+* Possibility to add phone number field
+* Possibility to add email address field
+* Making fields mandatory
+* Possibility to set fields placeholder
+
 The widget will send the whatsapp to the phone number set on the setting section.
 
 ## Installation.

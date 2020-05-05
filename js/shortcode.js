@@ -1,24 +1,34 @@
 jQuery(document).ready(function ($) {
 
-    $("#wp-phone-message-button").click(function () {
+    $("#whatapp-form").submit(function () {
         var fullTelephone = $('#wp-phone-message-full-phone-number').val();
         var message = $('#wp-phone-message-message').val();
+        var name = $('#wp-phone-message-name').val();
+        var address = $('#wp-phone-message-address').val();
+        var phone = $('#wp-phone-message-phone').val();
+        var email = $('#wp-phone-message-email').val();
         var title = $('#wp-phone-message-title').val();
 
-        var whatappUrl = "https://wa.me/" + fullTelephone + "?text=" + message;
+        if (whatappValidation(fullTelephone, 'whatapp-error')) {
+            final_message = whatappCreateFinalMessage(name, address, phone, email, message);
+            var whatappUrl = "https://wa.me/" + fullTelephone + "?text=" + final_message;
 
-        if (whatappValidation(fullTelephone, message, 'whatapp-error')) {
             popupwindow(whatappUrl, title, 1000, 700);
         }
     });
 
-    $("#wp-phone-message-widget-button").click(function () {
+    $("#whatapp-widget-form").submit(function () {
         var fullTelephone = $('#wp-phone-message-widget-full-phone-number').val();
         var message = $('#wp-phone-message-widget-message').val();
+        var name = $('#wp-phone-message-widget-name').val();
+        var address = $('#wp-phone-message-widget-address').val();
+        var phone = $('#wp-phone-message-widget-phone').val();
+        var email = $('#wp-phone-message-widget-email').val();
 
-        var whatappUrl = "https://wa.me/" + fullTelephone + "?text=" + message;
+        if (whatappValidation(fullTelephone, 'whatapp-widget-error')) {
+            final_message = whatappCreateFinalMessage(name, address, phone, email, message);
+            var whatappUrl = "https://wa.me/" + fullTelephone + "?text=" + final_message;
 
-        if (whatappValidation(fullTelephone, message, 'whatapp-widget-error')) {
             popupwindow(whatappUrl, 'Whatsapp Me', 1000, 700);
         }
     });
@@ -29,25 +39,35 @@ jQuery(document).ready(function ($) {
         return window.open(url, title, 'toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=no, resizable=no, copyhistory=no, width=' + w + ', height=' + h + ', top=' + top + ', left=' + left);
     }
 
-    function whatappValidation(fullTelephone, message, errorTarget) {
-        if (message) {
-            if (fullTelephone) {
-                whatappErrorMessage(" ", errorTarget);
-                return true;
-            }
-            else {
-                whatappErrorMessage("Telephone number is not set.", errorTarget);
-                return false;
-            }
+    function whatappValidation(fullTelephone, errorTarget) {
+        if (fullTelephone) {
+            whatappErrorMessage(" ", errorTarget);
+            return true;
         }
         else {
-            whatappErrorMessage("Please insert a message.", errorTarget);
+            whatappErrorMessage("Telephone number is not set.", errorTarget);
             return false;
         }
     }
 
     function whatappErrorMessage(errorMessage, errorTarget) {
         $("#" + errorTarget).text(errorMessage);
+    }
+
+    function whatappCreateFinalMessage(name, address, phone, email, message) {
+
+        final_message = '';
+        if (name !== undefined)
+            final_message += name + ' %0a';
+        if (address !== undefined)
+            final_message += address + ' %0a';
+        if (phone !== undefined)
+            final_message += phone + ' %0a';
+        if (email !== undefined)
+            final_message += email + ' %0a';
+        final_message += message;
+
+        return final_message;
     }
 
 });
