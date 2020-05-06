@@ -65,7 +65,7 @@ jQuery(document).ready(function ($) {
             final_message += phone + ' %0a';
         if (email !== undefined)
             final_message += email + ' %0a';
-        final_message += message;
+        final_message += message.replace(/[\r\n]/g, " %0a");
 
         return final_message;
     }
