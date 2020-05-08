@@ -85,6 +85,10 @@ e.g.
 
 == Changelog ==
 
+= 1.0.4 =
+* JS updated 
+* admin validation fixed
+
 = 1.0.3 =
 * Possibility to add name field
 * Possibility to add address field
