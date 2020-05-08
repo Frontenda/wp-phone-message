@@ -1,6 +1,7 @@
 jQuery(document).ready(function ($) {
 
-    $("#whatapp-form").submit(function () {
+    $("#whatapp-form").submit(function (e) {
+        e.preventDefault();
         var fullTelephone = $('#wp-phone-message-full-phone-number').val();
         var message = $('#wp-phone-message-message').val();
         var name = $('#wp-phone-message-name').val();
@@ -15,9 +16,11 @@ jQuery(document).ready(function ($) {
 
             popupwindow(whatappUrl, title, 1000, 700);
         }
+        return false;
     });
 
-    $("#whatapp-widget-form").submit(function () {
+    $("#whatapp-widget-form").submit(function (e) {
+        e.preventDefault();
         var fullTelephone = $('#wp-phone-message-widget-full-phone-number').val();
         var message = $('#wp-phone-message-widget-message').val();
         var name = $('#wp-phone-message-widget-name').val();
@@ -31,6 +34,7 @@ jQuery(document).ready(function ($) {
 
             popupwindow(whatappUrl, 'Whatsapp Me', 1000, 700);
         }
+        return false;
     });
 
     function popupwindow(url, title, w, h) {
@@ -40,12 +44,12 @@ jQuery(document).ready(function ($) {
     }
 
     function whatappValidation(fullTelephone, errorTarget) {
-        if (fullTelephone) {
+        if (fullTelephone && fullTelephone != '0') {
             whatappErrorMessage(" ", errorTarget);
             return true;
         }
         else {
-            whatappErrorMessage("Telephone number is not set.", errorTarget);
+            whatappErrorMessage("Telephone number is not set or not valid.", errorTarget);
             return false;
         }
     }
