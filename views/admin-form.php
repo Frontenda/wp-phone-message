@@ -74,7 +74,11 @@
                         </th>
                         <td>
                             <input type="checkbox" id="wp-phone-message-name-active" name="wp-phone-message-name-active" <?= ( get_option('wp-phone-message-name-active') ? 'checked' : '') ?> value="1">
-                            <label for="wp-phone-message-name-active">Active Name Input Area</label>
+                            <label for="wp-phone-message-name-active">Active Name Input Area in shortcode</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="wp-phone-message-name-active-widget" name="wp-phone-message-name-active-widget" <?= ( get_option('wp-phone-message-name-active-widget') ? 'checked' : '') ?> value="1">
+                            <label for="wp-phone-message-name-active-widget">Active Name Input Area in widget</label>
                         </td>
                         <td>
                             <input type="checkbox" id="wp-phone-message-name-mandatory" name="wp-phone-message-name-mandatory" <?= ( get_option('wp-phone-message-name-mandatory') ? 'checked' : '') ?> value="required">
@@ -93,7 +97,11 @@
                         </th>
                         <td>
                             <input type="checkbox" id="wp-phone-message-address-active" name="wp-phone-message-address-active" <?= ( get_option('wp-phone-message-address-active') ? 'checked' : '') ?> value="1">
-                            <label for="wp-phone-message-address-active">Active Address Input Area</label>
+                            <label for="wp-phone-message-address-active">Active Address Input Area in shortcode</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="wp-phone-message-address-active-widget" name="wp-phone-message-address-active-widget" <?= ( get_option('wp-phone-message-address-active-widget') ? 'checked' : '') ?> value="1">
+                            <label for="wp-phone-message-address-active-widget">Active Address Input Area in widget</label>
                         </td>
                         <td>
                             <input type="checkbox" id="wp-phone-message-address-mandatory" name="wp-phone-message-address-mandatory" <?= ( get_option('wp-phone-message-address-mandatory') ? 'checked' : '') ?> value="required">
@@ -112,7 +120,11 @@
                         </th>
                         <td>
                             <input type="checkbox" id="wp-phone-message-phone-active" name="wp-phone-message-phone-active" <?= ( get_option('wp-phone-message-phone-active') ? 'checked' : '') ?> value="1">
-                            <label for="wp-phone-message-phone-active">Active Phone Input Area</label>
+                            <label for="wp-phone-message-phone-active">Active Phone Input Area in shortcode</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="wp-phone-message-phone-active-widget" name="wp-phone-message-phone-active-widget" <?= ( get_option('wp-phone-message-phone-active-widget') ? 'checked' : '') ?> value="1">
+                            <label for="wp-phone-message-phone-active-widget">Active Phone Input Area in widget</label>
                         </td>
                         <td>
                             <input type="checkbox" id="wp-phone-message-phone-mandatory" name="wp-phone-message-phone-mandatory" <?= ( get_option('wp-phone-message-phone-mandatory') ? 'checked' : '') ?> value="required">
@@ -131,7 +143,11 @@
                         </th>
                         <td>
                             <input type="checkbox" id="wp-phone-message-email-active" name="wp-phone-message-email-active" <?= ( get_option('wp-phone-message-email-active') ? 'checked' : '') ?> value="1">
-                            <label for="wp-phone-message-email-active">Active Email Address Input Area</label>
+                            <label for="wp-phone-message-email-active">Active Email Address Input Area in shortcode</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="wp-phone-message-email-active-widget" name="wp-phone-message-email-active-widget" <?= ( get_option('wp-phone-message-email-active-widget') ? 'checked' : '') ?> value="1">
+                            <label for="wp-phone-message-email-active-widget">Active Email Address Input Area in widget</label>
                         </td>
                         <td>
                             <input type="checkbox" id="wp-phone-message-email-mandatory" name="wp-phone-message-email-mandatory" <?= ( get_option('wp-phone-message-email-mandatory') ? 'checked' : '') ?> value="required">

@@ -20,10 +20,14 @@ WP Phone Message is a Wordpress plugin that gives the possibility to render a si
 * Enter the form title
 * Enter form text
 * Enter form bottom text
-* Possibility to add name field
-* Possibility to add address field
-* Possibility to add phone number field
-* Possibility to add email address field
+* Possibility to add name field in shortcode form
+* Possibility to add address field in shortcode form
+* Possibility to add phone number field in shortcode form
+* Possibility to add email address field in shortcode form
+* Possibility to add name field in widget form
+* Possibility to add address field in widget form
+* Possibility to add phone number field in widget form
+* Possibility to add email address field in widget form
 * Making fields mandatory
 * Possibility to set fields placeholder
 
@@ -84,6 +88,16 @@ e.g.
 
 
 == Changelog ==
+
+= 1.0.5 =
+* Possibility to add name field in shortcode form
+* Possibility to add address field in shortcode form
+* Possibility to add phone number field in shortcode form
+* Possibility to add email address field in shortcode form
+* Possibility to add name field in widget form
+* Possibility to add address field in widget form
+* Possibility to add phone number field in widget form
+* Possibility to add email address field in widget form
 
 = 1.0.4 =
 * JS updated 
