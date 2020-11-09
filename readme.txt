@@ -2,7 +2,7 @@
 Contributors: webmarcello
 Tags: message, form, whatsapp, shortcode, widget
 Requires at least: 4.5.13
-Tested up to: 5.3.2
+Tested up to: 5.5.3
 Stable tag: trunk
 Requires PHP: 5.6
 License: GPLv2 or later
@@ -88,6 +88,10 @@ e.g.
 
 
 == Changelog ==
+
+= 1.0.6 =
+* Cleaning phone number and international prefix
+* Managing error messages on admin area
 
 = 1.0.5 =
 * Possibility to add name field in shortcode form
