@@ -31,6 +31,7 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
         public function adminSave(){
             // save data
             if( ( $_POST['wp-phone-message-phone-number'] ) && ( $_POST['wp-phone-message-phone-prefix'] ) ) {
+                $_POST['wp-phone-message-phone-number'] = $this->cleanPhoneNumber($_POST);
                 $this->model->setData($_POST);
                 $this->model->setMessage('Settings saved.');
             }
@@ -68,6 +69,19 @@ if ( !class_exists( 'WpPhoneMessageAdmin' ) ) {
 
         private function adminCallback() { // Section Callback
             echo '<p>This section is part of WP Phone Message Plugin</p>';
+        }
+        
+        private function cleanPhoneNumber($args){
+            $prefix = str_replace(' ', '', sanitize_text_field( $args['wp-phone-message-phone-prefix'] ));
+            $phone = sanitize_text_field( $args['wp-phone-message-phone-number'] );
+
+            if(is_numeric(substr($prefix, 0, 1))){
+                $prefix = '+'. $prefix;
+            }
+           
+            $phone = preg_replace('/^' . preg_quote($prefix, '/') . '/', '0', $phone);
+           
+            return $phone;
         }
     }
 }
